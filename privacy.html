@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - GauGyan</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href= "assets/img/logo.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main1.css" rel="stylesheet">
+  <style>
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal-content h2 {
+      margin-top: 0;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: black;
+    }
+
+    
+    .contact-info {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+     /* Change color on hover */
+     .contact-info a:hover {
+      color: #FF4500;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container-fluid container-xl position-relative d-flex align-items-left justify-content-between">
+      
+      <div id="mySidenav" class="sidenav">
+
+        
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <!--   <a href="#">My Profile</a>
+        <a href="#">My Exams</a>
+        <a href="#">My Certification</a>
+        <a href="#">My Vouchers</a>
+        <a href="#">My Enquiry</a>
+        <a href="#">My Orders</a>
+        <a href="privacy.html">Privacy Policy</a>   -->
+        <a href="refer.html">Refer & Earn</a>
+        <a href="javascript:void(0)" onclick="shareGauGyan()">Share GauGyan</a>
+        <!-- Link to open the modal -->
+       <a href="#" id="openModal">Help & Support</a>
+
+        <!-- Modal structure -->
+      <div class="modal" id="formModal">
+       <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>Contact Form</h2>
+
+      <!-- Contact information section -->
+      <div class="contact-info">
+        <p>Email us at: <a href="mailto:example@example.com">gaugyanworld@gmail.com</a></p>
+        <p>Call us: <a href="tel:+1234567890">+91 6367176883</a></p>
+      </div>
+    </div>
+  </div>
+  <script>
+    const modal = document.getElementById('formModal');
+    document.getElementById('openModal').addEventListener('click', (e) => {
+      e.preventDefault();
+      modal.style.display = 'flex';
+    });
+
+    document.getElementById('closeModal').addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  </script>
+        <a href="concept.html">Concept Of GauGyan</a>
+        
+      </div>
+      
+     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    <script>
+   
+
+      </script>
+     <img src="assets/img/one.jpg" alt="Logo" class="sidenav-logo"> 
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="blog.html">Services</a></li>
+          <li><a href="nearest.html">Nearest Gaushala</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="signin.html">SIGN IN</a></li>
+          <li><a href="signUP.html">SIGN UP</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.gaugyan.gaushala ">Download app</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg1.jpg);">
+        <div class="container position-relative">
+          <h1>Concept Of GauGyan</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              </ol>
+          </nav>
+        </div>
+      </div><!-- End Page Title -->
+
+      <!-- Blog Details Section -->
+      <section id="blog-details" class="blog-details section">
+        <div class="container">
+
+          <article class="article">
+          <h2 class="title">"Privacy Policy"
+        </h2>
+        <div class="content">
+              <p>
+                Introduction This Privacy Policy describes how and its affiliates (collectively Gaugyan productions Ilp, we, our, us") collect, use, share, protect or otherwise process your information/personal data through our website https://play.google.com/store/apps/details?id=com.gaugyan.gaushala (hereinafter referred to as Platform). Please note that you may be able to browse certain sections of the Platform without registering with us. We do not offer any product/service under this Platform outside India and your personal data will primarily be stored and processed in India. By visiting this Platform, providing your information or availing any product/service offered on the Platform, you expressly agree to be bound by the terms and conditions of this Privacy Policy, the Terms of Use and the applicable service/product terms and conditions, and agree to be governed by the laws of India including but not limited to the laws applicable to data protection and privacy. If you do not agree please do not use or access our Platform. Collection-We collect your personal data when you use our Platform, services or otherwise interact with us during the course of our relationship and related information provided from time to time. Some of the information that we may collect includes but is not limited to personal data/information provided to us during sign up/registering or using our Platform such as name, date of birth, address, telephone/mobile number, email IDand/or any such information shared as proof of identity or address.
+
+              <p>
+                Some of the sensitive personal data may be collected with your consent, such as your bank account or credit or debit card or other payment instrument information or biometric information such as your facial features or physiological information (in order to enable use of certain features when opted for, available on the Platform) etc all of the above being in accordance with applicable law(s) You always have the option to not provide information, by choosing not to use a particular service or feature on the Platform. We may track your behaviour, preferences, and other information that you choose to provide on our Platform.
+
+              </p>
+              <p>
+
+                This information is compiled and analysed on an aggregated basis. We will also collect your information related to your transactions on Platform and such third-party business partner platforms. When such a third-party business partner collects your personal data directly from you, you will be governed by their privacy policies. We shall not be responsible for the thirdparty business partner's privacy practices or the content of their privacy policies, and we request you to read their privacy policies prior to disclosing any information. If you receive an email, a call from a person/association claiming to be seeking any personal data like debit/credit card PIN, net-banking or mobile banking password, we request you to never provide such information. If you have already revealed such information, report it immediately to an appropriate law enforcement agency. Usage We use personal data to provide the services you request. To the extent we use your personal data to market to you, we will provide you the ability to opt-out of such uses. We use your personal data to assist sellers and business partners 1 in handling and fulfilling orders, enhancing customer experience; to resolve disputes; troubleshoot problems, inform you about online and offline
+
+offers, products, services, and updates, customise
+
+your experience; detect and protect us against error, fraud and other criminal activity; enforce our terms and conditions; conduct marketing research, analysis and surveys; and as otherwise 1 described to you at the time of collection of information. 
+              </p>
+              <p>
+                You understand that your access to these products/services may be affected in the event permission is not provided to us. Sharing- We may share your personal data internally within our group entities, our other corporate entities, and affiliates to provide you access to the services and products offered by them. These entities and affiliates may market to you as a result of such sharing unless you explicitly opt-out. We may disclose personal data to third parties such as sellers, business partners, third party service providers including logistics partners, prepaid payment instrument issuers, third-party reward programs and other payment opted by you.
+
+
+              </p>
+              
+              <p>
+                These disclosure may be required for us to provide you access to our services and products offered to you, to comply with our legal obligations, to enforce our user agreement, to facilitate our marketing and advertising activities, to prevent, detect, mitigate, and investigate fraudulent or illegal activities related to our services. We may disclose personal and sensitive personal data to government agencies or other authorised law enforcement agencies if required to do so by law or in the good faith belief that such disclosure is reasonably necessary to respond to subpoenas, court orders, or other legal process. We may disclose personal data to law enforcement offices, third party rights owners, or others in the good faith belief that such disclosure is reasonably necessary to: enforce our Terms of Use or Privacy Policy; respond to claims that an advertisement, posting or other content violates the rights of a third party, or protect the rights, property or personal safety of our users or the general public. Security Precautions- To protect your personal data from unauthorised access or disclosure, loss or misuse we adopt reasonable security practices and procedures. Once your information is in our possession or whenever you access your account information, we adhere to our security guidelines to protect it against unauthorised access and offer the use of a secure server. However, the transmission of information is not completely secure for reasons beyond our control.
+
+              </p>
+                
+              <p>
+                By using the Platform, the users accept the security implications of data transmission over the internet and the World Wide Web which cannot always be guaranteed as completely secure, and therefore, there would always remain certain inherent risks regarding use of the Platform. Users are responsible for ensuring the protection of login and password records for their account.Data Deletion and Retention- You have an option to delete your account by visiting your profile and settings on our Platform, this action would result in you losing all information related to your account. You may also write to us at the contact information provided below to assist you with these requests. We may in event of any pending grievance, claims, pending shipments or any other services we may refuse or delay deletion of the account. Once the account is deleted, you will lose access to the account. We retain your personal data information for a period no longer than is required for the purpose for which it was collected or as required under any applicable law. However, we may retain data related to 2 you if we believe it may be necessary to prevent fraud or future abuse or for other legitimate purposes. We may continue to retain your data in anonymised form for analytical and research purposes.
+              </p>
+              
+              <p>
+                Your Rights You may access, rectify, and update
+
+your personal data directly through the functionalities provided on the Platform. Consent-By visiting our Platform or by providing your Information, you consent to the collection, use, storage, disclosure and 2 otherwise processing of your information on the Platform in accordance with this Privacy Policy. If you disclose to us any personal data relating to other people, you represent that you have the authority to do so and permit us to use the information in accordance with this Privacy Policy. You, while providing your personal data over the Platform or any partner platforms or establishments, consent to us (including our other corporate entities, affiliates, lending partners, technology partners, marketing channels, business partners and other third parties) to contact you through SMS, instant messaging apps, call and/or e-mail for the purposes specified in this Privacy Policy. You have an option to withdraw your consent that you have already provided by writing to the Grievance Officer at the contact information provided below. Please mention "Withdrawal of consent for processing personal data" in your subject line of your communication. We may verify such requests before acting on our request. However, please note that your withdrawal of consent will not be retrospective and will be in accordance with the Terms of Use, this Privacy Policy, and applicable. laws. In the event you withdraw consent given to us under this Privacy Policy, we reserve the right to
+
+restrict or deny the provision of our services for
+
+which we consider such information to be necessary. Changes to this Privacy Policy- Please check our Privacy Policy periodically for changes.
+
+              </p>
+              
+              <p>
+                We may update this Privacy Policy to reflect changes to our information practices. We may alert/notify you about the significant changes to the Privacy Policy, in the manner as may be required under applicable laws
+              </p>
+       </article>
+       </div>
+      </section><!-- /Blog Details Section -->
+</div>
+
+    </div>
+
+  </div>
+</div>
+  </main>
+
+
+  <footer id="footer" class="footer dark-background">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row gy-2">
+              
+                <!-- Existing content of your footer -->
+  
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About us</a></li>
+                      <li><a href="blog.html">Services</a></li>
+                      <li><a href="about.html">Our Vision</a></li>
+                      <li><a href="terms.html">Termms & Conditions</a></li>
+                      <li><a href="privacy.html">Privacy Policy</a></li>
+                      <li><a href="dis.html">Disclaimer</a></li>
+                    </ul>
+                </div>
+  
+                <div class="col-lg-4 col-md-6 footer-links">
+                    <h4>Our Services</h4>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul>
+                                <li><a href="blog-details.html">Cow Holistic View</a></li>
+                                <li><a href="Healing.html">Healing & Meditation</a></li>
+                                <li><a href="sanatan.html">Sanatan Values & culture</a></li>
+                                <li><a href="geeta.html">Geeta,Vedpuran&spiritual</a></li>
+                                <li><a href="yoga.html">Yoga & Fitness</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                              <li><a href="social.html">Social Welfare by us</a></li>
+                              <li><a href="podcast.html">Dialogues,podcast& Seminar</a></li>
+                                <li><a href="interview.html">Interviews,Motivations& Success Stories</a></li>
+                                <li><a href="pers.html">Great Personalities & Places</a></li>
+                                <li><a href="blog-details.html">Exam Content for Scholarship & Prizes</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+  
+               <!-- Feedback button moved to center of the right side -->
+               <div class="col-lg-2 col-md-1 text-center mt-4 d-flex align-items-center justify-content-end ms-auto feedback-button-container">
+                <a href="feedback1.html" class="feedback-button"><b>Click Here for Feedback and Enquiry</b></a>
+              </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="copyright text-center">
+        <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+            <div class="d-flex flex-column align-items-center align-items-lg-start">
+                
+              <div>
+                © Copyright <strong><span>GauGyan</sp an></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+               
+            </div>
+            </div>
+            <div class="social-links order-first order-lg-last mb-2 mb-lg-0">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+                <a href=""><i class="bi bi-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+  </footer>
+<!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    function openFeedbackForm() {
+        document.getElementById("feedback-container").style.display = "block";
+    }
+</script>
+
+<script>
+function shareGauGyan() {
+  const shareData = {
+    title: 'GauGyan',
+    text: 'Check out GauGyan, a platform promoting awareness and knowledge about cows and sustainable living!',
+    url: window.location.href
+  };
+
+  if (navigator.share) {
+    navigator.share(shareData)
+      .then(() => console.log('Successfully shared!'))
+      .catch((error) => console.log('Sharing failed:', error));
+  } else {
+    alert('Web Share is not supported on this device.');
+  }
+  }
+</script>
+</body>
+
+</html>

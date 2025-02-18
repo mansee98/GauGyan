@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - GauGyan</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href= "assets/img/logo.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main1.css" rel="stylesheet">
+  <style>
+    .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .product {
+            background-color: #ffffff;
+            border: 1px solid #f54b21;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+            width: calc(33.333% - 40px); /* Ensures 3 products per row */
+            box-sizing: border-box;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-info {
+            margin-top: 10px;
+        }
+
+        .product-name {
+            font-size: 1.3em;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .product-price {
+            color: #e60000;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .quantity {
+            width: 60px;
+            padding: 5px;
+            font-size: 1em;
+            margin-top: 10px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 1200px) {
+            .product {
+                width: calc(50% - 30px); /* 2 products per row on medium screens */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .product {
+                width: calc(100% - 30px); /* 1 product per row on small screens */
+            }
+        }
+
+  </style>
+ 
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container-fluid container-xl position-relative d-flex align-items-left justify-content-between">
+      
+      <div id="mySidenav" class="sidenav">
+
+        
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <!--   <a href="#">My Profile</a>
+        <a href="#">My Exams</a>
+        <a href="#">My Certification</a>
+        <a href="#">My Vouchers</a>
+        <a href="#">My Enquiry</a>
+        <a href="#">My Orders</a>
+        <a href="privacy.html">Privacy Policy</a>   -->
+        <a href="refer.html">Refer & Earn</a>
+        <a href="javascript:void(0)" onclick="shareGauGyan()">Share GauGyan</a>
+        <!-- Link to open the modal -->
+       <a href="#" id="openModal">Help & Support</a>
+
+        <!-- Modal structure -->
+      <div class="modal" id="formModal">
+       <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>Contact Form</h2>
+
+      <!-- Contact information section -->
+      <div class="contact-info">
+        <p>Email us at: <a href="mailto:example@example.com">gaugyanworld@gmail.com</a></p>
+        <p>Call us: <a href="tel:+1234567890">+91 6367176883</a></p>
+      </div>
+    </div>
+  </div>
+  <script>
+    const modal = document.getElementById('formModal');
+    document.getElementById('openModal').addEventListener('click', (e) => {
+      e.preventDefault();
+      modal.style.display = 'flex';
+    });
+
+    document.getElementById('closeModal').addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  </script>
+        <a href="concept.html">Concept Of GauGyan</a>
+        
+      </div>
+      
+     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    <script>
+   
+
+      </script>
+     <img src="assets/img/one.jpg" alt="Logo" class="sidenav-logo"> 
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="blog.html">Services</a></li>
+          <li><a href="nearest.html">Nearest Gaushala</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="signin.html">SIGN IN</a></li>
+          <li><a href="signUP.html">SIGN UP</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.gaugyan.gaushala ">Download app</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+<main>
+    <div class="container">
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Product 1</h3>
+                <p class="product-price">$10.00</p>
+                <input type="number" class="quantity" value="1" min="1" placeholder="Enter quantity">
+            </div>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Product 2</h3>
+                <p class="product-price">$20.00</p>
+                <input type="number" class="quantity" value="1" min="1"placeholder="Enter quantity">
+            </div>
+        </div>
+        <div class="product">
+            <img src="product3.jpg" alt="Product 3" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Product 3</h3>
+                <p class="product-price">$15.00</p>
+                <input type="number" class="quantity" value="1" min="1"placeholder="Enter quantity">
+            </div>
+        </div>
+        <div class="product">
+            <img src="product4.jpg" alt="Product 4" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Product 4</h3>
+                <p class="product-price">$25.00</p>
+                <input type="number" class="quantity" value="1" min="1"placeholder="Enter quantity">
+            </div>
+        </div>
+        <div class="product">
+            <img src="product5.jpg" alt="Product 5" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Product 5</h3>
+                <p class="product-price">$30.00</p>
+                <input type="number" class="quantity" value="1" min="1" placeholder="Enter quantity">
+                
+            </div>
+        </div>
+        <div class="product">
+            <img src="product6.jpg" alt="Product 6" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Product 6</h3>
+                <p class="product-price">$35.00</p>
+                <input type="number" class="quantity" value="1" min="1" placeholder="Enter quantity">
+            </div>
+        </div>
+        <div class="product">
+            <img src="product7.jpg" alt="Product 7" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Product 7</h3>
+                <p class="product-price">$15.00</p>
+                <input type="number" class="quantity" value="1" min="1" placeholder="Enter quantity">
+            </div>
+        </div>
+        <div class="product">
+            <img src="product8.jpg" alt="Product 8" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Product 8</h3>
+                <p class="product-price">$15.00</p>
+                <input type="number" class="quantity" value="1" min="1" placeholder="Enter quantity">
+             </div>
+        </div>     
+        <div class="product">
+            <img src="product9.jpg" alt="Product 9" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Product 9</h3>
+                <p class="product-price">$15.00</p>
+                <input type="number" class="quantity" value="1" min="1" placeholder="Enter quantity">
+            </div>
+        </div> 
+    </div>      
+</main>
+<footer id="footer" class="footer dark-background">
+  <div class="footer-top">
+      <div class="container">
+          <div class="row gy-2">
+            
+              <!-- Existing content of your footer -->
+
+              <div class="col-lg-2 col-md-3 footer-links">
+                  <h4>Useful Links</h4>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="blog.html">Services</a></li>
+                    <li><a href="about.html">Our Vision</a></li>
+                    <li><a href="terms.html">Termms & Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="dis.html">Disclaimer</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-lg-4 col-md-6 footer-links">
+                  <h4>Our Services</h4>
+                  <div class="row">
+                      <div class="col-6">
+                          <ul>
+                              <li><a href="blog-details.html">Cow Holistic View</a></li>
+                              <li><a href="Healing.html">Healing & Meditation</a></li>
+                              <li><a href="sanatan.html">Sanatan Values & culture</a></li>
+                              <li><a href="geeta.html">Geeta,Vedpuran&spiritual</a></li>
+                              <li><a href="yoga.html">Yoga & Fitness</a></li>
+                              
+                          </ul>
+                      </div>
+                      <div class="col-6">
+                          <ul>
+                            <li><a href="social.html">Social Welfare by us</a></li>
+                            <li><a href="podcast.html">Dialogues,podcast& Seminar</a></li>
+                              <li><a href="interview.html">Interviews,Motivations& Success Stories</a></li>
+                              <li><a href="pers.html">Great Personalities & Places</a></li>
+                              <li><a href="blog-details.html">Exam Content for Scholarship & Prizes</a></li>
+                              
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+
+             <!-- Feedback button moved to center of the right side -->
+             <div class="col-lg-2 col-md-1 text-center mt-4 d-flex align-items-center justify-content-end ms-auto feedback-button-container">
+              <a href="feedback1.html" class="feedback-button"><b>Click Here for Feedback and Enquiry</b></a>
+            </div>
+              
+          </div>
+      </div>
+  </div>
+  
+  <div class="copyright text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+          <div class="d-flex flex-column align-items-center align-items-lg-start">
+              
+            <div>
+              © Copyright <strong><span>GauGyan</sp an></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+             
+          </div>
+          </div>
+          <div class="social-links order-first order-lg-last mb-2 mb-lg-0">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+              <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+              <a href=""><i class="bi bi-youtube"></i></a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+  
+<!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    function openFeedbackForm() {
+        document.getElementById("feedback-container").style.display = "block";
+    }
+</script>
+<script>
+  function shareGauGyan() {
+    const shareData = {
+      title: 'GauGyan',
+      text: 'Check out GauGyan, a platform promoting awareness and knowledge about cows and sustainable living!',
+      url: window.location.href
+    };
+
+    if (navigator.share) {
+      navigator.share(shareData)
+        .then(() => console.log('Successfully shared!'))
+        .catch((error) => console.log('Sharing failed:', error));
+    } else {
+      alert('Web Share is not supported on this device.');
+    }
+  }
+</script>
+</body>
+
+</html>
