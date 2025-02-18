@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Index - GauGyan</title>
   <meta name="description" content="">
@@ -27,189 +26,47 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/main1.css" rel="stylesheet">
-  <style>
-    /* Reset some default browser styles */
-    body, h2, form, input, button, a {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-    }
-
-    body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        background-color: #d6936c; /* Light Orange Background Color */
-    }
-
-    main {
-        display: flex;
-        flex: 1;
-        justify-content: center;
-        align-items: center;
-    }
-
-    section {
-        background-color: white;
-        padding: 2.5em; /* Increased padding for larger outer layout */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        max-width: 500px; /* Increased max-width for larger outer layout */
-        width: 100%;
-        text-align: left;
-    }
-
-    h2 {
-        text-align: center;
-    }
-    header {
-      margin-bottom: 20px; /* Space below header */
-    }
-
-  main {
-     margin-top: 20px;  /* Space above main */
-     margin-bottom: 20px; /* Space below main */
-    }
-
-  footer {
-    margin-top: 20px; /* Space above footer */
-    }
-    form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .form-group {
-        display: flex;
-        align-items: center;
-        margin-bottom: 1.5em; /* Increased margin-bottom for more gap */
-        position: relative;
-    }
-
-    label {
-        flex: 1;
-        margin-right: 1em;
-    }
-
-    label .required {
-        color: red;
-        margin-left: 0.25em;
-    }
-
-    input {
-        flex: 2;
-        padding: 0.5em;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
-
-    .error-message {
-        color: red;
-        font-size: 0.875em;
-        position: absolute;
-        right: 0;
-        top: 100%;
-        display: none;
-    }
-
-    button {
-        padding: 0.75em;
-        border: none;
-        border-radius: 4px;
-        background-color: #333;
-        color: white;
-        cursor: pointer;
-    }
-
-    button:hover {
-        background-color: #555;
-    }
-
-    .signup-link {
-        text-align: center;
-        margin-top: 1.5em; /* Increased margin-top for more gap */
-    }
-
-    .signup-link a {
-        color: #333;
-        text-decoration: none;
-    }
-
-    .signup-link a:hover {
-        text-decoration: underline;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 600px) {
-        section {
-            margin: 1em;
-            padding: 1.5em;
-        }
-
-        .form-group {
-            flex-direction: column;
-            align-items: stretch;
-        }
-
-        label {
-            margin-right: 0;
-            margin-bottom: 0.5em;
-        }
-
-        input {
-            flex: none;
-        }
-
-        form {
+    <style>
+        
+        
+        .feedback-form {
+            max-width: 500px;
             width: 100%;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: auto;
         }
-    }
-</style>
-<script>
-    function validateForm(event) {
-        event.preventDefault();
-        var emailOrPhone = document.getElementById("email").value;
-        var password = document.getElementById("password").value;
-        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        var phonePattern = /^\d{10}$/;
-        var passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-        var isValid = true;
-
-        if (!emailPattern.test(emailOrPhone) && !phonePattern.test(emailOrPhone)) {
-            showError(document.getElementById("email"), "Please enter a valid email address or phone number.");
-            isValid = false;
-        } else {
-            hideError(document.getElementById("email"));
+        .feedback-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
         }
-
-        if (!passwordPattern.test(password)) {
-            showError(document.getElementById("password"), "Password must be at least 8 characters long and contain at least one letter and one number.");
-            isValid = false;
-        } else {
-            hideError(document.getElementById("password"));
+        .feedback-form input,
+        .feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
-
-        if (isValid) {
-            window.location.href = "index.html"; // Redirect to home page
+        .feedback-form textarea {
+            resize: none;
+            height: 80px;
         }
-    }
-
-    function showError(input, message) {
-        var error = input.nextElementSibling;
-        error.textContent = message;
-        error.style.display = "block";
-    }
-
-    function hideError(input) {
-        var error = input.nextElementSibling;
-        error.style.display = "none";
-    }
-</script>
-  
+        .feedback-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .feedback-form button:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
-
 <body class="index-page">
-
   <header id="header" class="header d-flex align-items-center position-relative">
     <div class="container-fluid container-xl position-relative d-flex align-items-left justify-content-between">
       
@@ -224,7 +81,7 @@
         <a href="#">My Enquiry</a>
         <a href="#">My Orders</a>
         <a href="privacy.html">Privacy Policy</a>   -->
-        <a href="refer.html">Refer & Earn</a>
+        <a href="refer_and_earn.html">Refer & Earn</a>
         <a href="javascript:void(0)" onclick="shareGauGyan()">Share GauGyan</a>
         <!-- Link to open the modal -->
        <a href="#" id="openModal">Help & Support</a>
@@ -268,17 +125,17 @@
    
 
       </script>
-     <img src="assets/img/one.jpg" alt="Logo" class="sidenav-logo"> 
+      <a href="home.html">
+        <img src="assets/img/one.jpg" alt="Logo" class="sidenav-logo">  </a>
+     
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="blog.html">Services</a></li>
-          <li><a href="nearest.html">Nearest Gaushala</a></li>
+          <li><a href="home.html" class="active">Home</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="nearest_gaushala.html">Nearest Gaushala</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="signin.html">SIGN IN</a></li>
-          <li><a href="signUP.html">SIGN UP</a></li>
           <li><a href="https://play.google.com/store/apps/details?id=com.gaugyan.gaushala ">Download app</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -287,28 +144,15 @@
     </div>
   </header>
 
-
-    
-    <main class="main">
-        <section>
-            <h2>Sign In</h2>
-            <form onsubmit="validateForm(event)">
-                <div class="form-group">
-                    <label for="email">Email/Phone:<span class="required">*</span></label>
-                    <input type="text" id="email" name="email" required>
-                    <span class="error-message"></span>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password:<span class="required">*</span></label>
-                    <input type="password" id="password" name="password" required>
-                    <span class="error-message"></span>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
-            <div class="signup-link">
-                Not a member? <a href="signup.html">Sign up now</a>
-            </div>
-        </section>
+    <main>
+    <form class="feedback-form">
+        <h2>Feedback Form</h2>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number" required>
+        <textarea name="message" placeholder="Your Feedback" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
     </main>
     <footer id="footer" class="footer dark-background">
       <div class="footer-top">
@@ -320,13 +164,13 @@
                   <div class="col-lg-2 col-md-3 footer-links">
                       <h4>Useful Links</h4>
                       <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="blog.html">Services</a></li>
-                        <li><a href="about.html">Our Vision</a></li>
-                        <li><a href="terms.html">Termms & Conditions</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="dis.html">Disclaimer</a></li>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about_us.html">About us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about_us.html">Our Vision</a></li>
+                        <li><a href="terms_and_conditions.html">Terms and Conditions</a></li>
+                        <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
                       </ul>
                   </div>
     
@@ -335,7 +179,7 @@
                       <div class="row">
                           <div class="col-6">
                               <ul>
-                                  <li><a href="blog-details.html">Cow Holistic View</a></li>
+                                  <li><a href="cow_holistic_view.html">Cow Holistic View</a></li>
                                   <li><a href="Healing.html">Healing & Meditation</a></li>
                                   <li><a href="sanatan.html">Sanatan Values & culture</a></li>
                                   <li><a href="geeta.html">Geeta,Vedpuran&spiritual</a></li>
@@ -348,8 +192,8 @@
                                 <li><a href="social.html">Social Welfare by us</a></li>
                                 <li><a href="podcast.html">Dialogues,podcast& Seminar</a></li>
                                   <li><a href="interview.html">Interviews,Motivations& Success Stories</a></li>
-                                  <li><a href="pers.html">Great Personalities & Places</a></li>
-                                  <li><a href="blog-details.html">Exam Content for Scholarship & Prizes</a></li>
+                                  <li><a href="great_personalities_and_places.html">Great Personalities & Places</a></li>
+                                  <li><a href="services.html">Exam Content for Scholarship & Prizes</a></li>
                                   
                               </ul>
                           </div>
@@ -358,7 +202,7 @@
     
                  <!-- Feedback button moved to center of the right side -->
                  <div class="col-lg-2 col-md-1 text-center mt-4 d-flex align-items-center justify-content-end ms-auto feedback-button-container">
-                  <a href="feedback1.html" class="feedback-button"><b>Click Here for Feedback and Enquiry</b></a>
+                  <a href="feedback.html" class="feedback-button"><b>Click Here for Feedback and Enquiry</b></a>
                 </div>
                   
               </div>
@@ -377,20 +221,31 @@
               </div>
               </div>
               <div class="social-links order-first order-lg-last mb-2 mb-lg-0">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                  <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
-                  <a href=""><i class="bi bi-youtube"></i></a>
+                  <a href="https://twitter.com/gaugyanworld/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.facebook.com/Gau-Gyan-World|Jaipur/" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/gaugyanworld/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://wa.me/6367176883" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+                  <a href="https://www.youtube.com/@GaugyanWorld/" target="_blank"><i class="bi bi-youtube"></i></a>
               </div>
           </div>
       </div>
     </footer>
-  
-
-    <script src="main.js"></script>
-    <script>
+    <!-- Scroll Top -->
+      <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    
+      <!-- Preloader -->
+      <div id="preloader"></div>
+    
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+      <script src="assets/vendor/aos/aos.js"></script>
+      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    
+      <!-- Main JS File -->
+      <script src="assets/js/main.js"></script>
+      <script>
         function openFeedbackForm() {
             document.getElementById("feedback-container").style.display = "block";
         }

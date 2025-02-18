@@ -28,54 +28,67 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/main1.css" rel="stylesheet">
   <style>
-    /* Modal styles */
-    .modal {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      justify-content: center;
-      align-items: center;
-    }
-
-    .modal-content {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      width: 90%;
-      max-width: 400px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .modal-content h2 {
-      margin-top: 0;
-    }
-
-    .close {
-      color: #aaa;
-      float: right;
-      font-size: 24px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .close:hover {
-      color: black;
-    }
-
     
-    .contact-info {
-      margin-top: 10px;
-      font-size: 14px;
-    }
-     /* Change color on hover */
-     .contact-info a:hover {
-      color: #FF4500;
-    }
-  </style>
+
+.main {
+    display: flex;
+    justify-content: center;
+    background: #e5b971;
+    align-items: center;
+    height: 70vh;
+    text-align: center;
+}
+
+.container1 {
+    background: #dcd1b7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 22px;
+}
+
+p {
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+}
+
+.referral-code {
+    background: #e3e3e3;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+button {
+    background: #e8980e;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+}
+
+button:hover {
+    background: #e4a21e;
+}
+    </style>
+
 </head>
 
 <body class="index-page">
@@ -94,7 +107,7 @@
         <a href="#">My Enquiry</a>
         <a href="#">My Orders</a>
         <a href="privacy.html">Privacy Policy</a>   -->
-        <a href="refer.html">Refer & Earn</a>
+        <a href="refer_and_earn.html">Refer & Earn</a>
         <a href="javascript:void(0)" onclick="shareGauGyan()">Share GauGyan</a>
         <!-- Link to open the modal -->
        <a href="#" id="openModal">Help & Support</a>
@@ -138,17 +151,17 @@
    
 
       </script>
-     <img src="assets/img/one.jpg" alt="Logo" class="sidenav-logo"> 
+      <a href="home.html">
+        <img src="assets/img/one.jpg" alt="Logo" class="sidenav-logo">  </a>
+     
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="blog.html">Services</a></li>
-          <li><a href="nearest.html">Nearest Gaushala</a></li>
+          <li><a href="home.html" class="active">Home</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="nearest_gaushala.html">Nearest Gaushala</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="signin.html">SIGN IN</a></li>
-          <li><a href="signUP.html">SIGN UP</a></li>
           <li><a href="https://play.google.com/store/apps/details?id=com.gaugyan.gaushala ">Download app</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -160,67 +173,47 @@
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg1.jpg);">
-        <div class="container position-relative">
-          <h1>Concept Of GauGyan</h1>
-          <nav class="breadcrumbs">
-            <ol>
-              <li><a href="index.html">Home</a></li>
-              </ol>
-          </nav>
-        </div>
-      </div><!-- End Page Title -->
-
-      <!-- Blog Details Section -->
-      <section id="blog-details" class="blog-details section">
-        <div class="container">
-
-          <article class="article">
-          <h2 class="title">"DISCLAIMER"
-        </h2>
-        <div class="content">
-              <p>
-                <span style="color: red;">1. General Information</span><br>
-                The GauGyaan app provides information related to cattle care, dairy farming, and other agricultural topics. The content is for informational and educational purposes only and should not be considered professional or legal advice. Users should consult relevant experts before making any decisions based on the information provided in this app.
-              <p>
-                <span style="color: red;">2. Accuracy & Liability</span><br>
-                While we strive to provide accurate and up-to-date information, GauGyaan does not guarantee the completeness, reliability, or accuracy of the content. We are not responsible for any loss, damage, or consequences resulting from the use of the app or reliance on its content.
-
-              </p>
-              <p>
-
-                <span style="color: red;">3. Third-Party Links & Services</span><br>
-                The app may contain links to third-party websites or services for additional information. GauGyaan does not endorse, control, or take responsibility for any third-party content, services, or transactions. Users should review the terms and policies of any third-party providers before engaging with them.
-              </p>
-              <p>
-                <span style="color: red;">4. Personal Responsibility</span><br>
-Users of GauGyaan are responsible for their actions and decisions. The apps content is meant to support awareness but should not replace expert consultation.
-
-                
-
-              </p>
-              
-              <p>
-                
-                <span style="color: red;">5. No Warranties</span><br>
-                The app is provided on an "as is" and "as available" basis without warranties of any kind, either express or implied. We do not warrant that the app will be error-free, uninterrupted, or free from harmful components.
-              </p>
-              <P>
-                <span style="color: red;">6. Changes to Disclaimer</span><br>
-             We reserve the right to update or modify this disclaimer at any time without prior notice. Continued use of the app after changes implies acceptance of the updated terms.
-              </P>
-                
-             
-       </article>
-       </div>
-      </section><!-- /Blog Details Section -->
-</div>
-
+    <div class="container1">
+        <h1>Refer and Earn</h1>
+        <p>Share the referral code with your friends and earn rewards!</p>
+        <div class="referral-code" id="referralCode">Loading...</div>
+        <button onclick="copyReferralCode()">Copy Code</button>
+        <button onclick="shareReferralCode()">Share Code</button>
     </div>
+    <script>
+        // Function to generate a random referral code
+        function generateReferralCode() {
+            let code = 'REF' + Math.random().toString(36).substring(2, 10).toUpperCase();
+            document.getElementById("referralCode").textContent = code;
+        }
 
-  </div>
-</div>
+        // Function to copy referral code to clipboard
+        function copyReferralCode() {
+            let code = document.getElementById("referralCode").textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                alert("Referral code copied to clipboard!");
+            });
+        }
+
+        // Function to share referral code (Web Share API)
+        function shareReferralCode() {
+            let code = document.getElementById("referralCode").textContent;
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Refer and Earn',
+                    text: `Use my referral code: ${code} to get rewards!`,
+                    url: window.location.href
+                }).catch(error => {
+                    alert("Sharing failed: " + error.message);
+                });
+            } else {
+                alert("Sharing not supported on this device.");
+            }
+        }
+
+        window.onload = generateReferralCode;
+    </script>
+
   </main>
 
 
@@ -234,13 +227,13 @@ Users of GauGyaan are responsible for their actions and decisions. The apps cont
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="about.html">About us</a></li>
-                      <li><a href="blog.html">Services</a></li>
-                      <li><a href="about.html">Our Vision</a></li>
-                      <li><a href="terms.html">Termms & Conditions</a></li>
-                      <li><a href="privacy.html">Privacy Policy</a></li>
-                      <li><a href="dis.html">Disclaimer</a></li>
+                      <li><a href="home.html">Home</a></li>
+                      <li><a href="about_us.html">About us</a></li>
+                      <li><a href="services.html">Services</a></li>
+                      <li><a href="about_us.html">Our Vision</a></li>
+                      <li><a href="terms_and_conditions.html">Terms and Conditions</a></li>
+                      <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                      <li><a href="disclaimer.html">Disclaimer</a></li>
                     </ul>
                 </div>
   
@@ -249,7 +242,7 @@ Users of GauGyaan are responsible for their actions and decisions. The apps cont
                     <div class="row">
                         <div class="col-6">
                             <ul>
-                                <li><a href="blog-details.html">Cow Holistic View</a></li>
+                                <li><a href="cow_holistic_view.html">Cow Holistic View</a></li>
                                 <li><a href="Healing.html">Healing & Meditation</a></li>
                                 <li><a href="sanatan.html">Sanatan Values & culture</a></li>
                                 <li><a href="geeta.html">Geeta,Vedpuran&spiritual</a></li>
@@ -262,8 +255,8 @@ Users of GauGyaan are responsible for their actions and decisions. The apps cont
                               <li><a href="social.html">Social Welfare by us</a></li>
                               <li><a href="podcast.html">Dialogues,podcast& Seminar</a></li>
                                 <li><a href="interview.html">Interviews,Motivations& Success Stories</a></li>
-                                <li><a href="pers.html">Great Personalities & Places</a></li>
-                                <li><a href="blog-details.html">Exam Content for Scholarship & Prizes</a></li>
+                                <li><a href="great_personalities_and_places.html">Great Personalities & Places</a></li>
+                                <li><a href="services.html">Exam Content for Scholarship & Prizes</a></li>
                                 
                             </ul>
                         </div>
@@ -272,7 +265,7 @@ Users of GauGyaan are responsible for their actions and decisions. The apps cont
   
                <!-- Feedback button moved to center of the right side -->
                <div class="col-lg-2 col-md-1 text-center mt-4 d-flex align-items-center justify-content-end ms-auto feedback-button-container">
-                <a href="feedback1.html" class="feedback-button"><b>Click Here for Feedback and Enquiry</b></a>
+                <a href="feedback.html" class="feedback-button"><b>Click Here for Feedback and Enquiry</b></a>
               </div>
                 
             </div>
@@ -291,12 +284,11 @@ Users of GauGyaan are responsible for their actions and decisions. The apps cont
             </div>
             </div>
             <div class="social-links order-first order-lg-last mb-2 mb-lg-0">
-                <a href=""><i class="bi bi-twitter-x"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-                <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
-                <a href=""><i class="bi bi-youtube"></i></a>
+                <a href="https://twitter.com/gaugyanworld/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://www.facebook.com/Gau-Gyan-World|Jaipur/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/gaugyanworld/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://wa.me/6367176883" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.youtube.com/@GaugyanWorld/" target="_blank"><i class="bi bi-youtube"></i></a>
             </div>
         </div>
     </div>
@@ -321,22 +313,21 @@ Users of GauGyaan are responsible for their actions and decisions. The apps cont
         document.getElementById("feedback-container").style.display = "block";
     }
 </script>
-
 <script>
-function shareGauGyan() {
-  const shareData = {
-    title: 'GauGyan',
-    text: 'Check out GauGyan, a platform promoting awareness and knowledge about cows and sustainable living!',
-    url: window.location.href
-  };
+  function shareGauGyan() {
+    const shareData = {
+      title: 'GauGyan',
+      text: 'Check out GauGyan, a platform promoting awareness and knowledge about cows and sustainable living!',
+      url: window.location.href
+    };
 
-  if (navigator.share) {
-    navigator.share(shareData)
-      .then(() => console.log('Successfully shared!'))
-      .catch((error) => console.log('Sharing failed:', error));
-  } else {
-    alert('Web Share is not supported on this device.');
-  }
+    if (navigator.share) {
+      navigator.share(shareData)
+        .then(() => console.log('Successfully shared!'))
+        .catch((error) => console.log('Sharing failed:', error));
+    } else {
+      alert('Web Share is not supported on this device.');
+    }
   }
 </script>
 </body>
