@@ -28,67 +28,54 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/main1.css" rel="stylesheet">
   <style>
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal-content h2 {
+      margin-top: 0;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: black;
+    }
+
     
-
-.main {
-    display: flex;
-    justify-content: center;
-    background: #e5b971;
-    align-items: center;
-    height: 70vh;
-    text-align: center;
-}
-
-.container1 {
-    background: #dcd1b7;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-h1 {
-    color: #333;
-    font-size: 22px;
-}
-
-p {
-    color: #666;
-    font-size: 14px;
-    text-align: center;
-}
-
-.referral-code {
-    background: #e3e3e3;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 10px 0;
-    font-weight: bold;
-    font-size: 18px;
-    color: #333;
-    text-align: center;
-}
-
-button {
-    background: #e8980e;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    width: 100%;
-}
-
-button:hover {
-    background: #e4a21e;
-}
-    </style>
-
+    .contact-info {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+     /* Change color on hover */
+     .contact-info a:hover {
+      color: #FF4500;
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -107,7 +94,7 @@ button:hover {
         <a href="#">My Enquiry</a>
         <a href="#">My Orders</a>
         <a href="privacy.html">Privacy Policy</a>   -->
-        <a href="refer_and_earn.html">Refer & Earn</a>
+        <a href="refer.html">Refer & Earn</a>
         <a href="javascript:void(0)" onclick="shareGauGyan()">Share GauGyan</a>
         <!-- Link to open the modal -->
        <a href="#" id="openModal">Help & Support</a>
@@ -151,17 +138,17 @@ button:hover {
    
 
       </script>
-      <a href="index.html">
-        <img src="assets/img/one.jpg" alt="Logo" class="sidenav-logo">  </a>
-     
+     <img src="assets/img/one.jpg" alt="Logo" class="sidenav-logo"> 
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about_us.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="nearest_gaushala.html">Nearest Gaushala</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="blog.html">Services</a></li>
+          <li><a href="nearest.html">Nearest Gaushala</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="signin.html">SIGN IN</a></li>
+          <li><a href="signUP.html">SIGN UP</a></li>
           <li><a href="https://play.google.com/store/apps/details?id=com.gaugyan.gaushala ">Download app</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -171,52 +158,79 @@ button:hover {
   </header>
 
 
+
   <main class="main">
 
-    <div class="container1">
-        <h1>Refer and Earn</h1>
-        <p>Share the referral code with your friends and earn rewards!</p>
-        <div class="referral-code" id="referralCode">Loading...</div>
-        <button onclick="copyReferralCode()">Copy Code</button>
-        <button onclick="shareReferralCode()">Share Code</button>
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg1.jpg);">
+      <div class="container position-relative">
+        <h1>Refund Policy</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+   
+          <!-- Blog Details Section -->
+          <section id="blog-details" class="blog-details section">
+            <div class="container">
+
+              <article class="article">
+              <h2 class="title">Refund Policy
+            </h2>
+            <div class="content">
+                  <p>
+                   
+1. Introduction<br>
+This Refund Policy outlines the terms and conditions under which refunds are issued for purchases made through our platform. By using our platform, you agree to this policy and its terms.<br>
+2. Eligibility for Refunds<br>
+Refunds will only be processed under the following conditions:<br>
+•	The service or product purchased is found to be defective, non-functional, or not delivered as promised.<br>
+•	A cancellation request is made within the stipulated refund period.<br>
+•	A duplicate payment was made due to a technical error.<br>
+•	Any other valid reason deemed appropriate by our team.<br>
+3. Non-Refundable Items<br>
+Certain products and services may not be eligible for a refund, including but not limited to:<br>
+•	Services that have already been availed or completed.<br>
+•	Digital products that have been downloaded or accessed.<br>
+•	Subscription-based services after the trial period has ended.<br>
+•	Any purchase made using promotional offers or discounts unless explicitly stated otherwise.<br>
+4. Refund Request Process<br>
+To request a refund, follow these steps:<br>
+1.	Contact our support team at [support email] with your order details and reason for the refund request.<br>
+2.	Provide any necessary proof or documentation to support your claim.<br>
+3.	Our team will review the request and respond within 7 business days.<br>
+4.	If approved, the refund will be processed through the original payment method.<br>
+5. Refund Processing Time<br>
+Once approved, refunds will be processed within 7 business days. The time taken for the refund to reflect in your account may vary based on your payment provider.<br>
+6. Cancellations<br>
+Customers may cancel their orders within 24 hours of purchase to be eligible for a full refund. Cancellation requests beyond this period may not be accepted.<br>
+7. Changes to This Refund Policy<br>
+We reserve the right to modify this Refund Policy at any time. Any changes will be communicated through our platform or other official channels.<br>
+For any further queries, please contact our customer support at info@gaugyanworld.com.
+
+
+
+                  </p>
+                 
+                    
+                    
+                  
+                  
+           </article>
+           </div>
+          </section><!-- /Blog Details Section -->
+</div>
+
+        </div>
+
+      </div>
     </div>
-    <script>
-        // Function to generate a random referral code
-        function generateReferralCode() {
-            let code = 'REF' + Math.random().toString(36).substring(2, 10).toUpperCase();
-            document.getElementById("referralCode").textContent = code;
-        }
-
-        // Function to copy referral code to clipboard
-        function copyReferralCode() {
-            let code = document.getElementById("referralCode").textContent;
-            navigator.clipboard.writeText(code).then(() => {
-                alert("Referral code copied to clipboard!");
-            });
-        }
-
-        // Function to share referral code (Web Share API)
-        function shareReferralCode() {
-            let code = document.getElementById("referralCode").textContent;
-            if (navigator.share) {
-                navigator.share({
-                    title: 'Refer and Earn',
-                    text: `Use my referral code: ${code} to get rewards!`,
-                    url: window.location.href
-                }).catch(error => {
-                    alert("Sharing failed: " + error.message);
-                });
-            } else {
-                alert("Sharing not supported on this device.");
-            }
-        }
-
-        window.onload = generateReferralCode;
-    </script>
 
   </main>
-
-
   <footer id="footer" class="footer dark-background">
     <div class="footer-top">
         <div class="container">
@@ -228,11 +242,11 @@ button:hover {
                     <h4>Useful Links</h4>
                     <ul>
                       <li><a href="index.html">Home</a></li>
-                      <li><a href="about_us.html">About us</a></li>
-                      <li><a href="services.html">Services</a></li>
-                      <li><a href="about_us.html">Our Vision</a></li>
-                      <li><a href="terms_and_conditions.html">Terms and Conditions</a></li>
-                      <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                      <li><a href="about.html">About us</a></li>
+                      <li><a href="blog.html">Services</a></li>
+                      <li><a href="about.html">Our Vision</a></li>
+                      <li><a href="terms.html">Termms & Conditions</a></li>
+                      <li><a href="privacy.html">Privacy Policy</a></li>
                       <li><a href="disclaimer.html">Disclaimer</a></li>
                       <li><a href="refund_policy.html">Refund Policy</a></li>
                     </ul>
@@ -243,7 +257,7 @@ button:hover {
                     <div class="row">
                         <div class="col-6">
                             <ul>
-                                <li><a href="cow_holistic_view.html">Cow Holistic View</a></li>
+                                <li><a href="blog-details.html">Cow Holistic View</a></li>
                                 <li><a href="Healing.html">Healing & Meditation</a></li>
                                 <li><a href="sanatan.html">Sanatan Values & culture</a></li>
                                 <li><a href="geeta.html">Geeta,Vedpuran&spiritual</a></li>
@@ -256,8 +270,8 @@ button:hover {
                               <li><a href="social.html">Social Welfare by us</a></li>
                               <li><a href="podcast.html">Dialogues,podcast& Seminar</a></li>
                                 <li><a href="interview.html">Interviews,Motivations& Success Stories</a></li>
-                                <li><a href="great_personalities_and_places.html">Great Personalities & Places</a></li>
-                                <li><a href="services.html">Exam Content for Scholarship & Prizes</a></li>
+                                <li><a href="pers.html">Great Personalities & Places</a></li>
+                                <li><a href="blog-details.html">Exam Content for Scholarship & Prizes</a></li>
                                 
                             </ul>
                         </div>
@@ -266,7 +280,7 @@ button:hover {
   
                <!-- Feedback button moved to center of the right side -->
                <div class="col-lg-2 col-md-1 text-center mt-4 d-flex align-items-center justify-content-end ms-auto feedback-button-container">
-                <a href="feedback.html" class="feedback-button"><b>Click Here for Feedback and Enquiry</b></a>
+                <a href="feedback1.html" class="feedback-button"><b>Click Here for Feedback and Enquiry</b></a>
               </div>
                 
             </div>
@@ -285,16 +299,19 @@ button:hover {
             </div>
             </div>
             <div class="social-links order-first order-lg-last mb-2 mb-lg-0">
-                <a href="https://twitter.com/gaugyanworld/" target="_blank"><i class="bi bi-twitter-x"></i></a>
-                <a href="https://www.facebook.com/Gau-Gyan-World|Jaipur/" target="_blank"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/gaugyanworld/" target="_blank"><i class="bi bi-instagram"></i></a>
-                <a href="https://wa.me/6367176883" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
-                <a href="https://www.youtube.com/@GaugyanWorld/" target="_blank"><i class="bi bi-youtube"></i></a>
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+                <a href=""><i class="bi bi-youtube"></i></a>
             </div>
         </div>
     </div>
   </footer>
-<!-- Scroll Top -->
+
+
+  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
@@ -331,6 +348,7 @@ button:hover {
     }
   }
 </script>
+
 </body>
 
 </html>
