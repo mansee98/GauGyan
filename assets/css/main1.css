@@ -89,3 +89,19 @@ body {
    .contact-info a:hover {
     color: #FF4500;
   }
+
+
+  table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
